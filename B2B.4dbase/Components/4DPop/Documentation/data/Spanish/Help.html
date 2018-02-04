@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK href="../Common/style.css" rel="stylesheet" type="text/css">
+<TITLE>4DPop Léame</TITLE>
+</HEAD>
+<BODY>
+<P>
+  <IFRAME src="../Common/Header.html" frameborder="0" scrolling="no" align="middle" height="182" width="100%" NORESIZE="true"></IFRAME>
+</P>
+<TABLE width="100%" border="0" cellpadding="4" cellspacing="0">
+  <TR>
+    <TD width="6%" valign="top"><IMG src="../Common/4DPop.png" alt="" width="64" height="64" align="absmiddle"></TD>
+    <TD width="94%" valign="middle">Este componente instala una paleta en el entorno Diseño. Esta paleta se enriquece gradualmente con herramientas a medida que se instalan componentes compatibles.</TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Instalación</H2>
+<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+  <TR valign="top">
+    <TD align="right">1.</TD>
+    <TD>Cree una carpeta <SPAN class="fileAndFolder">&quot;Components&quot;</SPAN> junto al archivo de estructura de su base (<SPAN class="fileAndFolder">&quot;.4db&quot;</SPAN>)</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">2.</TD>
+    <TD>Ubique la carpeta  <SPAN class="fileAndFolder">&quot;4DPop.4dbase&quot;</SPAN>  o un alias de esta carpeta en la carpeta &quot;Components&quot;.</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">3.</TD>
+    <TD>Abra su base.</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">4.</TD>
+    <TD>En el método de base  <SPAN class="fileAndFolder">&quot;On Startup Database Method&quot;</SPAN>, digite &quot;<SPAN class="fileAndFolder">Install 4DPop&quot; </SPAN>luego la tecla tabulación. El código de la paleta  4DPop se inserta automáticamente en el método.
+      <BLOCKQUOTE>
+        <BLOCKQUOTE>
+          <BLOCKQUOTE>
+            <P class="Code4D">&nbsp;&nbsp;`Run 4DPop<BR>
+              &nbsp;&nbsp;`This code is available even if the component is not present like in the final application.<BR>
+              <B>If</B> (<B>Not</B>(<B>Is compiled mode)</B>)<BR>
+              &nbsp;&nbsp;<B>ARRAY TEXT</B>($tTxt_Components;0)<BR>
+              &nbsp;&nbsp;<B>COMPONENT LIST</B>($tTxt_Components)<BR>
+              &nbsp;&nbsp;<B>If</B> (<B>Find in array</B>($tTxt_Components;&quot;4DPop&quot;)&gt;0)<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;<B>EXECUTE METHOD</B>(&quot;4DPop_Palette&quot;)<BR>
+              &nbsp;&nbsp;<B>End if</B><BR>
+              <B>End if</B></P>
+          </BLOCKQUOTE>
+        </BLOCKQUOTE>
+    </BLOCKQUOTE></TD>
+  </TR>
+  <TR>
+    <TD align="right" valign="top">5.</TD>
+    <TD>Reabra la base, la paleta aparece en la esquina inferior izquierda de la pantalla en modo Diseño.</TD>
+  </TR>
+</TABLE>
+<P class="note">*En Macintosh el componente es un paquete cuya extensión  &quot;.4dbase&quot; no es necesariamente visible  en función de los ajustes de sus preferencias de visualización. </P>
+<HR>
+<H2>Uso</H2>
+<P>La ayuda de  4DPop está disponible en el menú Ayuda o haciendo clic en el icono <SPAN class="fileAndFolder">&quot;i&quot;</SPAN> de la paleta</P>
+<P>La paleta se muestra en la esquina inferior izquierda de la pantalla en modo Diseño. Si la paleta está cerrada, puede abrirla halando la flecha indicadora.</P>
+<P><IMG src="Images/close.png" width="32"></P>
+<P>Si hace doble clic en la flecha indicadora de la paleta cuando está cerrada, se abrirá y ajustará su tamaño al número de herramientas presentes. Al hacer doble clic en la flecha indicadora de la paleta abierta se cerrará.</P>
+<P>Si no está instalado ningún componente  compatible, la paleta abierta mostrará la siguiente imagen:</P>
+<P><IMG src="Images/none.png" height="68" width="98"></P>
+<P>Si uno o varios componentes están instalados, aparecerán como botones. </P>
+<UL>
+  <LI>Hacer clic sobre uno de estos botones puede lanzar la herramienta correspondiente o abrir un menú que puede utilizarse para seleccionar una herramienta de una colección.
+  <LI>Un clic asociado a la tecla opción en  Macintosh o  Alt en Windows abrirá el archivo de ayuda asociado al componente (archivo<SPAN class="fileAndFolder"> &quot;MyComponent.htm&quot;</SPAN> ubicado junto al archivo de estructura del componente).
+</UL>
+<IMG src="Images/Palette.png" alt="" height="68" width="428" border="0">
+<P>Puede mover la paleta haciendo clic en la barra de título, ubicarla a la derecha o a la izquierda de la pantalla. La posición de la paleta es memorizada.</P>
+<P>Un menú contextual es accesible en la barra de título de la paleta. Toma nuevamente todas las herramientas cargadas y algunas opciones de visualización de la paleta.</P>
+<P>Los componentes se cargan en orden alfabético: para forzar un componente a cargarse primero (a la izquierda) puede colocarle un prefijo al archivo por ejemplo &quot;01&quot;.</P>
+<HR>
+<H2>Componentes compatibles </H2>
+<P>Coloque uno o más componentes compatibles* o alias en la carpeta &quot;Components&quot; de su base y reiníciela para acceder a las nuevas herramientas disponibles en la paleta. </P>
+<P>Los componentes disponibles son:</P>
+<TABLE cellpadding="10">
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopbookmarks.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Bookmarks</SPAN></TD>
+    <TD><HR>
+      Organice los marcadores que utiliza a diario: URL, archivos, carpetas, emails... Administre su lista de favoritos con arrastrar y soltar.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopconstanteditor.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Constants Editor</SPAN></TD>
+    <TD><HR>
+      Cree y publique sus propios conjuntos de constantes personalizadas, en un editor dedicado. Utilícelas inmediatamente en sus métodos 4D.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopimagebuddy.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Image buddy</SPAN></TD>
+    <TD><HR>
+        <P>Administre todas las imágenes de su carpeta Resources de la aplicación. Puede fácilmente seleccionar, duplicar y transformar sus imágenes, vistas previas y arrastrarlas a sus formularios o aplicaciones y utilizar las herramientas de importación para convertir recursos PICT o CICN en PNGs.</P>    </TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopmigration.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Migration</SPAN></TD>
+    <TD><HR>
+      Migre cuidadosamente sus aplicaciones a 4D v11 SQL manteniendo el control de todos los recursos de la aplicación, transformando sus antiguas constantes personalizadas 4DK# al nuevo formato de constantes 4D v11 SQL.  ¡Haga lo mismo con sus macros!</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopquiz.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Commands</SPAN></TD>
+    <TD align="left" valign="top"><HR>
+      Acceda rápidamente a la documentación de los comandos 4D y arrastre y suelte comandos (¡Y sus parámetros!) al editor de métodos.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpoprulers.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Rulers</SPAN></TD>
+    <TD><HR>
+    Cree todas las guías que quiera, poniendo reglas horizontales y verticales en su espacio de trabajo. Visualice su aplicación en la pantalla de sus usuarios finales sin tener que cambiar sus preferencias.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopcolorchart.png" alt="" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Color Chart</SPAN></TD>
+    <TD><HR>
+      Elija con precisión los colores de fondo y primer plano de todos sus proyectos de una gran cantidad de paletas profesionales (RGB, HSL, etc.) y genere el código fuente correspondiente simplemente arrastrándolo y soltándolo en sus métodos.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4DPop sqlSchema.png" alt="sqlSchemas" width="64" height="64" align="absmiddle" border="0"><SPAN class="macro">4DPop sqlSchemas</SPAN></TD>
+    <TD ><HR>
+      Defina gráficamente los esquemas SQL utilizados para conexiones SQL externas (ODBC, SQL Pass trough, 4D for Flex, etc.). Los esquemas se aplican cuando se define el método de base On sql authenticate.</TD>
+  </TR>
+  
+  
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopwindow.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Window</SPAN></TD>
+    <TD ><HR>
+      <P>Tome control de múltiples ventanas a través de un menú jerárquico. Puede visualizar a la vez todas las ventanas del modo Diseño y del modo Aplicación y reorganizar sus ventanas y administrar sus dependencias (un método de objeto depende de un formulario, por ejemplo). Recupere ventanas perdidas después de un cambio de resolución y mucho más...</P>    </TD>
+  </TR>
+  <TR valign="top" align="left">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopxliff.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop XLIFF</SPAN></TD>
+    <TD><HR>
+        <P>Utilice 4D como un verdadero editor de localización para administrar los recursos XLIFF de su aplicación o de otra carpeta externa. Migre fácilmente sus antiguos recursos STR# y TEXT con esta útil herramienta.</P>    </TD>
+  </TR>
+</TABLE>
+<P>* Vaya a la ayuda de  4DPop para conocer cómo crear componentes  compatibles.</P>
+<HR>
+<H2>Código fuente proporcionado</H2>
+<P>Este componente se ofrece en versión compilada pero puede encontrar el código fuente en la carpeta <SPAN class="fileAndFolder">&quot;SOURCES&quot;</SPAN> ubicada dentro de la carpeta de cada componente.</P>
+<HR>
+<H2>Forum</H2>
+<P>Visite el foro dedicado a 4D Pop en: <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank" class="Command4D">http://forums.4d.fr/</A></P>
+</BODY>
+</HTML>

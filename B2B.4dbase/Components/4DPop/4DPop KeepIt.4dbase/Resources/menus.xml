@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menus version="1">
+	
+	<!-- Main menu bar -->
+	<menu id="main">
+		<menu text=":xliff:CommonMenuFile">
+			<item text=":xliff:newItem" reference="new" shortcut="N"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemSave" shortcut="S"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuImport" reference="import"/>
+			<item text=":xliff:CommonMenuExport" reference="export"/>
+			<item text="-"/>
+			<item text=":xliff:CommonClose" reference="close" shortcut="W"/>
+		</menu>
+		<menu text=":xliff:CommonMenuEdit">
+			<item text=":xliff:CommonMenuItemUndo" standard_action="17" shortcut="Z"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemCut" standard_action="18" shortcut="X" enable="1"/>
+			<item text=":xliff:CommonMenuItemCopy" method="menu_copy" shortcut="C" enable="1"/>
+			<item text=":xliff:CommonMenuItemPaste" method="menu_past" shortcut="V" enable="1"/>
+			<item text=":xliff:CommonMenuItemClear" standard_action="21"/>
+			<item text=":xliff:CommonMenuItemSelectAll" standard_action="22" shortcut="A"/>
+			<item text="-"/>
+			<item text=":xliff:CommonMenuItemShowClipboard" standard_action="23"/>
+		</menu>
+	</menu>
+	
+	<!-- Context menu for the list -->
+	<menu id="list">
+		<item text=":xliff:newItem" reference="add"/>	
+		<item text="-"/>	
+		<item text=":xliff:CommonImport" method="item_import"/>	
+	</menu>
+		
+	<!-- Context menu for the list when an item is selected -->
+	<menu id="list_Item">
+		<item text=":xliff:CommonExportDial" method="menu_export"/>	
+		<item text="-"/>
+		<item text=":xliff:rename" reference="rename"/>		
+		<item text=":xliff:CommonMenuItemClear" method="item_delete"/>
+		<item text="-"/>			
+		<item text=":xliff:CommonMenuItemCopy" method="menu_copy"/>				
+		<item text=":xliff:duplicate" method="menu_duplicate"/>	
+	</menu>	
+	
+	<!-- Action menu -->
+	<menu id="item_action">			
+		<item text=":xliff:tokenize" reference="item_tokenize"/>
+		<item text=":xliff:Indent" reference="item_indent"/>	
+	</menu>	
+	
+</menus>

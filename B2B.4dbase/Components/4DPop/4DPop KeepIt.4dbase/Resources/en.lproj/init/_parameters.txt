@@ -1,0 +1,1 @@
+$Lon_parameters:=Count parametersIf (Asserted($Lon_parameters >= <ask message="Number of requested parameters?" type="integer"/> ;"Missing parameter"))		<caret/>	Else		ABORT	End if

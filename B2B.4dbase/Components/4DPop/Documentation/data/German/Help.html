@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK href="../Common/style.css" rel="stylesheet" type="text/css">
+<TITLE>4DPop Read me</TITLE>
+</HEAD>
+<BODY>
+<P>
+  <IFRAME src="../Common/Header.html" frameborder="0" scrolling="no" align="middle" height="182" width="100%" NORESIZE="true"></IFRAME>
+</P>
+<TABLE width="100%" border="0" cellpadding="4" cellspacing="0">
+  <TR>
+    <TD width="6%" valign="top"><IMG src="../Common/4DPop.png" alt="" width="64" height="64" align="absmiddle"></TD>
+    <TD width="94%" valign="middle"><SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Diese Komponente installiert eine Palette in der Designumgebung. Sie wird nach und nach erweitert, wenn kompatible Komponenten installiert werden.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+</TABLE>
+<HR>
+<H2><SPAN style='font-family:Verdana'>Installation</SPAN></H2>
+<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+  <TR valign="top">
+    <TD align="right">1.</TD>
+    <TD><SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Erstellen Sie einen Ordner <SPAN class=fileandfolder1>&quot;Components&quot;</SPAN> neben der Strukturdatei Ihrer Datenbank (<SPAN class=fileandfolder1>&quot;.4db&quot;</SPAN>)<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">2.</TD>
+    <TD><SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Legen Sie den Ordner <SPAN class=fileandfolder1>&quot;4DPop.4dbase&quot;</SPAN> oder ein Alias davon in den Ordner &quot;Components&quot;.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">3.</TD>
+    <TD><SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Öffnen Sie Ihre Datenbank.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">4.</TD>
+    <TD><SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Tippen Sie &quot; <SPAN class=fileandfolder1>Install 4DPop&quot;</SPAN>in der <SPAN class=fileandfolder1>&quot;Datenbankmethode On Startup&quot;</SPAN> und drücken dann die Tabulatortaste. Der Code zum Laden der Palette von 4DPop wird in die Methode eingefügt.<o:p></o:p></SPAN></SPAN>
+      <BLOCKQUOTE>
+          <BLOCKQUOTE>
+            <BLOCKQUOTE>
+               <P class="Code4D">&nbsp;&nbsp;`4DPop starten <BR>
+              &nbsp;&nbsp;`Dieser Code ist auch verfügbar, wenn die Komponente nicht vorhanden ist, wie in der Endanwendung.<BR>
+              <B>If</B> (<B>Not</B>(<B>Is compiled mode)</B>)<BR>
+              &nbsp;&nbsp;<B>ARRAY TEXT</B>($tTxt_Components;0)<BR>
+              &nbsp;&nbsp;<B>COMPONENT LIST</B>($tTxt_Components)<BR>
+              &nbsp;&nbsp;<B>If</B> (<B>Find in array</B>($tTxt_Components;&quot;4DPop&quot;)&gt;0)<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;<B>EXECUTE METHOD</B>(&quot;4DPop_Palette&quot;)<BR>
+              &nbsp;&nbsp;<B>End if</B><BR>
+              <B>End if</B></P>
+            </BLOCKQUOTE>
+          </BLOCKQUOTE>
+    </BLOCKQUOTE></TD></TR>
+  <TR>
+    <TD align="right" valign="top">5.</TD>
+    <TD><SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Öffnen Sie die Datenbank erneut, erscheint die Palette im Designmodus auf dem Bildschirm in der unteren linken Ecke.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+</TABLE>
+<P class="note"><SPAN style='font-family:Verdana;color:#333333'>*Auf Macintosh ist die Komponente ein Paket. Die Endung &quot;4dbase&quot; ist je nach den Einstellungen für die Anzeige nicht zwingend sichtbar.<o:p></o:p></SPAN></P>
+<HR>
+<H2><SPAN style='font-family:Verdana'>Verwendung</SPAN></H2>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Die 4DPop Hilfe ist im Menü Hilfe verfügbar oder wenn Sie in der Palette auf das Icon <SPAN
+class=fileandfolder1>&quot;i&quot;</SPAN> klicken.<o:p></o:p></SPAN></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Sie erscheint im Designmodus in der unteren linken Ecke des Bildschirms. Ist sie geschlossen, können Sie sie durch Ziehen des Handgriffs öffnen.<o:p></o:p></SPAN></P>
+<P><IMG src="Images/close.png" width="32"></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Doppelklicken Sie bei geschlossener Palette auf den Handgriff, öffnet sich die Palette und die Größe passt sich an die Anzahl der vorhandenen Werkzeuge an. Doppelklicken Sie bei geöffneter Palette auf den Handgriff, wird sie geschlossen.<o:p></o:p></SPAN></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Sind keine kompatiblen Komponenten installiert, zeigt die geöffnete Palette folgendes Bild:<o:p></o:p></SPAN></P>
+<P><IMG src="Images/none.png" height="68" width="98"></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Sind eine oder mehrere Komponenten installiert, erscheinen sie als Schaltflächen.<o:p></o:p></SPAN></P>
+<UL>
+  <LI><SPAN class="MsoNormal"><SPAN
+     style='font-size:9.0pt;font-family:Verdana'>Klicken Sie auf eine dieser Schaltflächen, startet entweder das entsprechende Werkzeug oder es öffnet sich ein Menü, in dem Sie zwischen verschiedenen Werkzeugen wählen können.<o:p></o:p></SPAN></SPAN>
+  <LI><SPAN class="MsoNormal"><SPAN
+     style='font-size:9.0pt;font-family:Verdana'>Klicken Sie unter Windows mit gedrückter Alt-Taste, auf Mac OS mit gedrückter Wahltaste auf die Schaltfläche, wird die der Komponente zugeordnete Hilfedatei geöffnet (Datei <SPAN class=fileandfolder1>&quot;MyComponent.htm&quot;</SPAN>, die neben der Strukturdatei der Komponente liegt).<o:p></o:p></SPAN></SPAN>
+</UL>
+<IMG src="Images/Palette.png" alt="" height="68" width="428" border="0">
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Sie können die Palette durch Anklicken der Titelleiste bewegen, auf dem Bildschirm nach links oder rechts setzen. Die Position der Palette wird gespeichert.<o:p></o:p></SPAN></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>In der Titelleiste ist ein Kontextmenü verfügbar. Es zeigt erneut alle geladenen Werkzeuge und einige Anzeigeoptionen der Palette.<o:p></o:p></SPAN></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Die Komponenten werden alphabetisch geladen. Soll eine bestimmte Komponente an erster Stelle (von links) geladen werden, können Sie dem Dateinamen z.B. &quot;01&quot; voranstellen.<o:p></o:p></SPAN></P>
+<HR>
+<H2><SPAN style='font-family:Verdana'>Kompatible Komponenten<o:p></o:p></SPAN></H2>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Setzen Sie eine oder mehrere kompatible* Komponenten oder ein Alias in den Ordner &quot;Components&quot; Ihrer Datenbank und starten Sie diese neu, damit Sie auf diese neuen Werkzeuge über die Palette zugreifen können.<o:p></o:p></SPAN></P>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Folgende Komponenten sind verfügbar:<o:p></o:p></SPAN></P>
+<TABLE cellpadding="10">
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopbookmarks.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Bookmarks</SPAN></TD>
+    <TD><HR>
+      <SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Organisieren Sie die täglich genutzten Bookmarks: URL, Dateien, Ordner, E-Mails... Steuern Sie Ihre Favoritenliste</SPAN><SPAN
+  lang=EN-GB style='font-size:9.0pt;font-family:Verdana;color:#333333;
+  mso-ansi-language:EN-GB'> per Drag-and-Drop.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopconstanteditor.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Constants Editor</SPAN></TD>
+    <TD><HR>
+      <SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Erstellen und veröffentlichen Sie Ihren individuellen Satz von Konstanten in einem eigenen Editor. Verwenden Sie diese sofort in Ihren 4D Methoden.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopimagebuddy.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Image buddy</SPAN></TD>
+    <TD><HR>
+        <P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Verwalten Sie alle Bilder über den Ordner Resources in Ihrer Anwendung. Sie können Ihre Bilder leicht auswählen, duplizieren und umwandeln, eine Vorschau anzeigen, sie in Ihre Formulare oder Anwendungen ziehen und über Import-Werkzeuge PICT oder CICN Ressourcen in PNGs konvertieren.<o:p></o:p></SPAN></P>    </TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopmigration.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Migration</SPAN></TD>
+    <TD><HR>
+      <P class=MsoNormal><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Portieren Sie Ihre Anwendungen problemlos auf 4D v11 SQL:<o:p></o:p></SPAN></P>
+      <P class=MsoNormal><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>- Bearbeiten Sie die Tastenkürzel des Entwicklungsmodus<o:p></o:p></SPAN></P>
+      <P class=MsoNormal><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>- Übertragen Sie alte eigene Benutzerkonstanten aus der „Ressource <SPAN class=SpellE>fork</SPAN>“ der Struktur in ein eigenes Plug-In,<o:p></o:p></SPAN></P>
+      <P class=MsoNormal><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>- Konvertieren Sie alte Makros<o:p></o:p></SPAN></P></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopquiz.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Commands</SPAN></TD>
+    <TD align="left" valign="top"><HR>
+      <SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Suchen Sie einen Befehl über Schlüsselwort, öffnen Sie per Doppelklick die dazugehörige online Dokumentation und ziehen Sie Befehle (und ihre Parameter) per Drag and Drop in den Methodeneditor.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpoprulers.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Rulers</SPAN></TD>
+    <TD><HR>
+      <SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Zeigen Sie Lineale und Hilfslinien im Entwicklungs- und im Anwendungsmodus für präzises Abmessen auf dem Bildschirm an. Simulieren Sie eine Bildschirmgröße und gestalten die Oberfläche auf Pixel genau.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopcolorchart.png" alt="" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Color Chart</SPAN></TD>
+    <TD><HR>
+      Für all Ihre Projekte präzise Hintergrund- und Vordergrundfarben aus einer Vielzahl professioneller Paletten (RGB, HSL, etc.) auswählen und den entsprechenden Quellcode einfach per Drag and Drop in Ihren Methoden erstellen.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4DPop sqlSchema.png" alt="sqlSchemas" width="64" height="64" align="absmiddle" border="0"><SPAN class="macro">4DPop sqlSchemas</SPAN></TD>
+    <TD ><HR>
+      SQL Schemas zur Verwendung externer SQL Verbindung grafisch definieren (ODBC, SQL Pass trough, 4D for Flex, etc.). Schemas werden angewandt, wenn die Datenbankmethode On sql authenticate definiert ist.</TD>
+  </TR>
+  
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopwindow.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Window</SPAN></TD>
+    <TD ><HR>
+      <SPAN class="MsoNormal"><SPAN style='font-size:9.0pt;font-family:Verdana;
+  color:#333333'>Steuern Sie über ein hierarchisches Menü die Fenster im Entwicklungs- und im Anwendungsmodus. Ordnen Sie Ihre Fenster oder stellen Sie Fenster wieder her, die bei geänderter Auflösung außerhalb des Bildschirms liegen.<o:p></o:p></SPAN></SPAN></TD>
+  </TR>
+  <TR valign="top" align="left">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopxliff.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop XLIFF</SPAN></TD>
+    <TD><HR>
+        <P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Verwenden Sie 4D als echten Lokalisierungseditor zum Verwalten und Bearbeiten der XLIFF Dateien in Ihrer Anwendung. Übertragen Sie Textreferenzen direkt in den Methoden- oder Formulareditor.<o:p> <SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Über einen Befehl können Sie vorhandene STR# Ressourcen in XLIFF Dateien konvertieren.<o:p></o:p></SPAN></o:p></SPAN></P>    </TD>
+  </TR>
+</TABLE>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>* Lesen Sie in der 4DPop Hilfe nach, wie Sie kompatible Komponenten erstellen können.<o:p></o:p></SPAN></P>
+<HR>
+<H2><SPAN style='font-family:Verdana'>Source-Code wird mitgeliefert<o:p></o:p></SPAN></H2>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Diese Komponente wird in kompilierter Version geliefert. Der Source-Code liegt jedoch im Ordner jeder Komponenten im Dokument <SPAN class=fileandfolder1>&quot;SOURCES&quot;</SPAN> bei.<o:p></o:p></SPAN></P>
+<HR>
+<H2>Forum</H2>
+<P><SPAN style='font-size:9.0pt;font-family:Verdana;color:#333333'>Besuchen Sie das Forum zu 4D Pop unter: <A href="http://forums.4d.fr/Forum/FR/1467485/0/0"
+target="_blank" title="4DPop Forum"><SPAN style='font-size:10.5pt;font-family:
+Arial'>http://forums.4d.fr/</SPAN></A><o:p></o:p></SPAN></P>
+</BODY>
+</HTML>

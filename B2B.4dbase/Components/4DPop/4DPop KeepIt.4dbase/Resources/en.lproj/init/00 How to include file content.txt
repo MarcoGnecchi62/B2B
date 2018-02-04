@@ -1,0 +1,1 @@
+/*How to include a file's content :- file://...    is an absolute path- #...           the path is relative in the host's resources folder- /...           the path is relative in the keepit resources folderNote: The tags found in the file will be interpreted*/<file url="/licence.txt"/>

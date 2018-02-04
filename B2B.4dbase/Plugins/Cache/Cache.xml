@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<CacheFiles xmlns="http://namespace/reserved/2004/cache">
+
+  <File>
+    <ArchiveName>ZIP.4darchive</ArchiveName>
+    <Name>ZIP.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>170146275679636589261703215069878206474420435198582</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>Request Token.4darchive</ArchiveName>
+    <Name>Request Token.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>7374757592532760672738059863613889597611274208507</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>QTAtoms.4darchive</ArchiveName>
+    <Name>QTAtoms.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>7364013010424994838738059863613889583811635102516</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>QPix.4darchive</ArchiveName>
+    <Name>QPix.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>127661200045613238521277886554072422507319065377519</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>JSON.4darchive</ArchiveName>
+    <Name>JSON.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>8794284220296468103880469704434174581123690385540</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>API Pack.4darchive</ArchiveName>
+    <Name>API Pack.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>9073131414286205534908381370601709934315416276671</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>ALP.4darchive</ArchiveName>
+    <Name>ALP.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>127670483780336158581277886554072422257226113037192</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4D Write.4darchive</ArchiveName>
+    <Name>4D Write.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>8797645477184251451880469704434174124924888653308</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4D View.4darchive</ArchiveName>
+    <Name>4D View.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>4823491652330830085483052854795925977827690207028</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4D Pack.4darchive</ArchiveName>
+    <Name>4D Pack.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>119157794502145582581192250548914743046717343012586</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4D ODBC Pro.4darchive</ArchiveName>
+    <Name>4D ODBC Pro.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>119157794502147168691192250548914742508015547558361</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4D InternetCommands.4darchive</ArchiveName>
+    <Name>4D InternetCommands.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>119157794502140314161192250548914742462615954974209</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4D for OCI.4darchive</ArchiveName>
+    <Name>4D for OCI.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>119157794416910304341192250548914742422017560699536</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>0QLM.4darchive</ArchiveName>
+    <Name>0QLM.bundle</Name>
+    <Type>Folder</Type>
+    <Contents>124860864730033542101249024384577349149215872114590</Contents>
+  </File>
+
+  <version>11</version>
+
+</CacheFiles>

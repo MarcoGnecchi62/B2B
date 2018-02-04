@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>4D ODBC Pro</string>
+	<key>CFBundleIconFile</key>
+	<string>4D ODBC PRO.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.4D.4DODBCPro</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>4D ODBC Pro</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>11.8 (81344)</string>
+	<key>CFBundleSignature</key>
+	<string>4D11</string>
+	<key>CFBundleVersion</key>
+	<string>81344</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

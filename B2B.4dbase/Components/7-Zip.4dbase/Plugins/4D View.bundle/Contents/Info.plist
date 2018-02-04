@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>4PV</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>4D ViewDoc.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>4D View Document</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>4PV7</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.4D.4DView.Doc</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>4TP</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>4D ViewTemplate.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>4D View Template</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>sPV7</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.4D.4DView.Temp</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>4D View</string>
+	<key>CFBundleIconFile</key>
+	<string>4D View.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.4D.4DView</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>4D View</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>11.8 (81344)</string>
+	<key>CFBundleSignature</key>
+	<string>4D06</string>
+	<key>CFBundleVersion</key>
+	<string>81344</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+</dict>
+</plist>

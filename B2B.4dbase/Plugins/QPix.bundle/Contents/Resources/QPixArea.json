@@ -1,0 +1,348 @@
+{
+	"bar": [
+		{
+			"title":            "Q",
+			"icon":             "0x2D2D",
+			"items": [
+				{
+					"title":    "About QPix…",
+					"cmd":      "cmdAbout"
+				},
+				{ "sep": true },
+				{
+					"title":    "QuickTime Information…",
+					"cmd":      "cmdQTInfo"
+				}
+			]
+		},
+		{
+			"title":            "File",
+			"items": [
+				{
+					"title":    "Import…",
+					"cmd":      "cmdImport",
+					"key":      "O"
+				},
+				{
+					"title":    "Import URL…",
+					"cmd":      "cmdImportURL",
+					"key":      "U"
+				},
+				{ "sep": true },
+				{
+					"title":    "Export…",
+					"cmd":      "cmdExport",
+					"key":      "S"
+				},
+				{ "sep": true },
+				{
+					"title":    "Acquire…",
+					"cmd":      "cmdAcquire"
+				},
+				{
+					"title":    "Select device…",
+					"cmd":      "cmdSettings"
+				},
+				{ "sep": true },
+				{
+					"title":    "Revert",
+					"cmd":      "cmdRevert",
+					"key":      "R"
+				},
+				{ "sep": true },
+				{
+					"title":    "Image Info…",
+					"cmd":      "cmdImageInfo",
+					"key":      "I"
+				},
+				{ "sep": true },
+				{
+					"title":    "Page Setup…",
+					"cmd":      "cmdPageSetup"
+				},
+				{
+					"title":     "Print…",
+					"cmd":      "cmdPrint",
+					"key":      "P"
+				}
+			]
+		},
+		{
+			"title":            "Edit",
+			"items": [
+				{
+					"title":    "Undo",
+					"cmd":      "cmdUndo",
+					"key":      "Z"
+				},
+				{ "sep": true },
+				{
+					"title":    "Cut",
+					"cmd":      "cmdCut",
+					"key":      "X"
+				},
+				{
+					"title":    "Copy",
+					"cmd":      "cmdCopy",
+					"key":      "C"
+				},
+				{
+					"title":    "Paste",
+					"cmd":      "cmdPaste",
+					"key":      "V"
+				},
+				{
+					"title":    "Clear",
+					"cmd":      "cmdClear"
+				},
+				{ "sep": true },
+				{
+					"title":    "Crop",
+					"cmd":      "cmdCrop",
+					"key":      "K"
+				},
+				{ "sep": true },
+				{
+					"title":    "Select All",
+					"cmd":      "cmdSelectAll",
+					"key":      "A"
+				}
+			]
+		},
+		{
+			"title":            "Image",
+			"items": [
+				{
+					"title":    "Flip",
+					"items": [
+						{
+							"title":    "Horizontal",
+							"cmd":      "cmdFlipHorz"
+						},
+						{
+							"title":    "Vertical",
+							"cmd":      "cmdFlipVert"
+						}
+					]
+				},
+				{
+					"title":    "Rotate",
+					"items": [
+						{
+							"title":    "180°",
+							"cmd":      "cmdRotate180"
+						},
+						{
+							"title":    "90° CW",
+							"cmd":      "cmdRotate90CW"
+						},
+						{
+							"title":    "90° CCW",
+							"cmd":      "cmdRotate90CCW"
+						},
+						{
+							"title":    "Arbitrary…",
+							"cmd":      "cmdRotate"
+						}
+					]
+				},
+				{ "sep": true },
+				{
+					"title":    "Invert",
+					"cmd":      "cmdInvert"
+				},
+				{ "sep": true },
+				{
+					"title":    "Filter…",
+					"cmd":      "cmdFilter"
+				},
+				{
+					"title":    "Filter again",
+					"cmd":      "cmdFilterAgain"
+				},
+				{ "sep": true },
+				{
+					"title":    "Image Size…",
+					"cmd":      "cmdSize"
+				}
+			]
+		},
+		{
+			"title":        "View",
+			"items": [
+				{
+					"title":    "Zoom In",
+					"cmd":      "cmdZoomIn",
+					"key":      "+"
+				},
+				{
+					"title":    "Zoom Out",
+					"cmd":      "cmdZoomOut",
+					"key":      "-"
+				},
+				{ "sep": true },
+				{
+					"title":    "Normal Size",
+					"cmd":      "cmdNormalSize",
+					"key":      "="
+				},
+				{ "sep": true },
+				{
+					"title":    "Zoom To Fit",
+					"cmd":      "cmdZoomToFitArea",
+					"key":      "*"
+				}
+			]
+		}
+	],
+	
+	"tools": {
+		"items": [
+            {
+                  "icon":       "0xC7",
+                  "cmd":        "cmdPointerTool"
+            },
+            {
+                  "icon":       "0xC8",
+                  "cmd":        "cmdMarqueeTool"
+            },
+            {
+                  "icon":       "0xC9",
+                  "cmd":        "cmdZoomTool"
+            },
+            {
+                  "icon":       "0xCA",
+                  "cmd":        "cmdHandTool"
+            }
+		]
+	},
+	
+	"zoom": {
+		"items": [
+			{
+				"title":    "6%",
+				"cmd":      "cmdZoom6"
+			},
+			{
+				"title":    "12%",
+				"cmd":      "cmdZoom12"
+			},
+			{
+				"title":    "25%",
+				"cmd":      "cmdZoom25"
+			},
+			{
+				"title":    "50%",
+				"cmd":      "cmdZoom50"
+			},
+			{
+				"title":    "100%",
+				"cmd":      "cmdZoom100"
+			},
+			{
+				"title":    "200%",
+				"cmd":      "cmdZoom200"
+			},
+			{
+				"title":    "400%",
+				"cmd":      "cmdZoom400"
+			},
+			{
+				"title":    "800%",
+				"cmd":      "cmdZoom800"
+			},
+			{
+				"title":    "1600%",
+				"cmd":      "cmdZoom1600"
+			}
+		]
+	},
+	
+    "icons": {
+        "0xC7":     "PointerTool",
+        "0xC8":     "MarqueeTool",
+        "0xC9":     "ZoomTool",
+        "0xCA":     "HandTool",
+        "0x2D2D":   "Q"
+    },
+    
+	"commands": {
+		"cmdAbout":         "0x1000",
+		"cmdQTInfo":        "0x1001",
+
+		"cmdImport":        "0x0001",
+		"cmdImportURL":     "0x0002",
+		"cmdAcquire":       "0x0003",
+
+		"cmdExport":        "0x0004",
+
+		"cmdRevert":        "0x0005",
+
+		"cmdImageInfo":     "0x0006",
+
+		"cmdPageSetup":     "0x000A",
+		"cmdPrint":         "0x000B",
+
+		"cmdSettings":      "0x000F",
+
+		"cmdUndo":          "0x0101",
+		"cmdCut":           "0x0102",
+		"cmdCopy":          "0x0103",
+		"cmdPaste":         "0x0104",
+		"cmdClear":         "0x0105",
+
+		"cmdCrop":          "0x0106",
+
+		"cmdSelectAll":     "0x0107",
+
+		"cmdFlipHier":      "0x0201",
+		"cmdFlipHorz":      "0x0202",
+		"cmdFlipVert":      "0x0203",
+
+		"cmdRotateHier":    "0x0301",
+		"cmdRotate180":     "0x0302",
+		"cmdRotate90CW":    "0x0303",
+		"cmdRotate90CCW":   "0x0304",
+		"cmdRotate":        "0x0305",
+
+		"cmdInvert":        "0x0401",
+		"cmdFilter":        "0x0402",
+		"cmdFilterAgain":   "0x0403",
+
+		"cmdSize":          "0x0501",
+
+		"cmdZoomIn":        "0x0601",
+		"cmdZoomOut":       "0x0602",
+		"cmdNormalSize":    "0x0603",
+
+		"cmdZoom6":         "0x0604",
+		"cmdZoom12":        "0x0605",
+		"cmdZoom25":        "0x0606",
+		"cmdZoom50":        "0x0607",
+		"cmdZoom100":       "0x0608",
+		"cmdZoom200":       "0x0609",
+		"cmdZoom400":       "0x060A",
+		"cmdZoom800":       "0x060B",
+		"cmdZoom1600":      "0x060C",
+
+		"cmdZoomToFitAreaHorz":         "0x060D",
+		"cmdZoomToFitAreaVert":         "0x060E",
+		"cmdZoomToFitArea":             "0x060F",
+		"cmdZoomToFillArea":            "0x0610",
+		"cmdZoomStretchToFitAreaHorz":  "0x0611",
+		"cmdZoomStretchToFitAreaVert":  "0x0612",
+		"cmdZoomStretchToFitArea":      "0x0613",
+		"cmdZoomStretchToFillArea":     "0x0614",
+        
+		"cmdPointerTool":   "0x0801",
+		"cmdMarqueeTool":   "0x0802",
+		"cmdZoomTool":      "0x0803",
+		"cmdHandTool":      "0x0804",
+
+		"cmdGotoPage":      "0x0701",
+		"cmdPrevPage":      "0x0702",
+		"cmdNextPage":      "0x0703",
+		"cmdFirstPage":     "0x0704",
+		"cmdLastPage":      "0x0705"
+	}
+}

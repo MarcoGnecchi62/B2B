@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK href="../Common/style.css" rel="stylesheet" type="text/css">
+<TITLE>4DPop Read me</TITLE>
+</HEAD>
+<BODY>
+<P>
+  <IFRAME src="../Common/Header.html" frameborder="0" scrolling="no" align="middle" height="182" width="100%" NORESIZE="true"></IFRAME>
+</P>
+<TABLE width="100%" border="0" cellpadding="4" cellspacing="0">
+  <TR>
+    <TD width="6%" valign="top"><IMG src="../Common/4DPop.png" alt="" width="64" height="64" align="absmiddle"></TD>
+    <TD width="94%" valign="middle">This component installs a palette in the Design mode. Tools will be added to this palette gradually as compatible components are installed.</TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>Installation</H2>
+<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+  <TR valign="top">
+    <TD align="right">1.</TD>
+    <TD>Create a <SPAN class="fileAndFolder">&quot;Components&quot;</SPAN> folder next to the structure file of your database (<SPAN class="fileAndFolder">&quot;.4db&quot;</SPAN>)</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">2.</TD>
+    <TD>Place the <SPAN class="fileAndFolder">&quot;4DPop.4dbase&quot;</SPAN> folder or an alias of this one in the &quot;Components&quot; folder.</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">3.</TD>
+    <TD>Open your database.</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">4.</TD>
+    <TD>In the <SPAN class="fileAndFolder">&quot;On Startup Database Method&quot;</SPAN>, type &quot;<SPAN class="fileAndFolder">Install 4DPop&quot; </SPAN>then a tabulation key. The 4DPop's palette loading code is inserted in the method.
+      <BLOCKQUOTE>
+        <BLOCKQUOTE>
+          <BLOCKQUOTE>
+            <P class="Code4D">&nbsp;&nbsp;`Run 4DPop<BR>
+              &nbsp;&nbsp;`This code is available even if the component is not present like in the final application.<BR>
+              <B>If</B> (<B>Not</B>(<B>Is compiled mode)</B>)<BR>
+              &nbsp;&nbsp;<B>ARRAY TEXT</B>($tTxt_Components;0)<BR>
+              &nbsp;&nbsp;<B>COMPONENT LIST</B>($tTxt_Components)<BR>
+              &nbsp;&nbsp;<B>If</B> (<B>Find in array</B>($tTxt_Components;&quot;4DPop&quot;)&gt;0)<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;<B>EXECUTE METHOD</B>(&quot;4DPop_Palette&quot;)<BR>
+              &nbsp;&nbsp;<B>End if</B><BR>
+              <B>End if</B></P>
+          </BLOCKQUOTE>
+        </BLOCKQUOTE>
+    </BLOCKQUOTE></TD>
+  </TR>
+  <TR>
+    <TD align="right" valign="top">5.</TD>
+    <TD>Reopen the database, the palette is displayed in the lower left corner of the screen in Design mode.</TD>
+  </TR>
+</TABLE>
+<P class="note">*On Macintosh the component is a package whose extension &quot;4dbase&quot; is not necessarily visible according to the adjustments of your preferences of display.</P>
+<HR>
+<H2>Use</H2>
+<P>The 4DPop help is available in the help menu or while clicking on the <SPAN class="fileAndFolder">&quot;i&quot;</SPAN> icon of the palette</P>
+<P>The palette is displayed in the lower left corner of the screen in Design mode. If the palette is closed you can open it by pulling the handle.</P>
+<P><IMG src="Images/close.png" width="32"></P>
+<P>If you double-click on the handle of the palette when closed, it will open and adjust its size to the number of tools present. Double-clicking on the handle of the open palette will close it.</P>
+<P>If no compatible component is installed, the opened palette will display the following picture:</P>
+<P><IMG src="Images/none.png" height="68" width="98"></P>
+<P>If one or more components are installed, they will appear as buttons. </P>
+<UL>
+  <LI>Clicking on one of these buttons can either launch the corresponding tool or open a menu that can be used to select from a collection of tools.
+  <LI>Clicking while holding down the Option key on Macintosh or the Alt key on Windows will open the help file associated with the component (<SPAN class="fileAndFolder">&quot;MyComponent.htm&quot;</SPAN> file placed next to the structure file of the component).
+</UL>
+<IMG src="Images/Palette.png" alt="" height="68" width="428" border="0">
+<P>You can move the palette by clicking on the title bar, place it on left or on the right of the screen. The pallet's position is memorized.</P>
+<P>A contextual menu is accessible on the title bar of the pallet. It takes again the whole of the tools charged and some options with display of the pallet.</P>
+<P>The components are charged alphabetically: To force a component to be charged in first (on the left) you can prefix the name of the file with &quot;01&quot; for example.</P>
+<HR>
+<H2>Compatible components</H2>
+<P>Place one or more compatible* components or alias in the folder &quot;Components&quot; of your database and restart to access these new tools by the Palette.</P>
+<P>The available components are:</P>
+<TABLE cellpadding="10">
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopbookmarks.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Bookmarks</SPAN></TD>
+    <TD><HR>
+      Organize the bookmarks you use everyday: URL, files, foders, emails... Manage your list of favorites by drag-and-drop.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopconstanteditor.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Constants Editor</SPAN></TD>
+    <TD><HR>
+      Create and publish your own personalized sets of constants in a dedicated editor. Use them immediately in your 4D methods.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopimagebuddy.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Image buddy</SPAN></TD>
+    <TD><HR>
+        <P>Manage all the images in your application's Resources folder. You can easily select, duplicate, and transform your images, preview, drag them into your forms or applications, and use importing tools to convert PICT or CICN resources into PNGs.</P>    </TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopmigration.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Migration</SPAN></TD>
+    <TD><HR>
+      Carefully migrate your applications to 4D v11 SQL by keeping control on all your application shortcuts by transforming your old personalized 4DK# constants 4D v11 SQL constants - and do the same for your macros, as well!</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopquiz.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Commands</SPAN></TD>
+    <TD align="left" valign="top"><HR>
+      Quickly get to the 4D command documentation, and drag-and-drop commands (and their parameters!) into the method editor.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpoprulers.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Rulers</SPAN></TD>
+    <TD><HR>
+    Create all the guides you want, placing horizontal and vertical rules on your workspace. Visualize your application within your end-users' screen real estate without having to change your preferences.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopcolorchart.png" alt="" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Color Chart</SPAN></TD>
+    <TD><HR>
+      Precisely choose background and foreground colors for all your projects from a multitude of professional palletes (RGB, HSL, etc.) and generate the corresponding source code simply by dragging and dropping into your methods.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4DPop sqlSchema.png" alt="sqlSchemas" width="64" height="64" align="absmiddle" border="0"><SPAN class="macro">4DPop sqlSchemas</SPAN></TD>
+    <TD ><HR>
+      Graphically define SQL Schemas used for external SQL connections (ODBC, SQL Pass trough, 4D for Flex, etc.). Schemas are applied when the database method On sql authenticate is defined.</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopwindow.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Window</SPAN></TD>
+    <TD ><HR>
+    Take control of multiple open windows through a hierarchical menu. All at once, you can keep an eye on your windows in development mode and application mode, and reorganize your windows and manage their dependencies (a method object dependent on a form, for example). Recover windows that have been lost to screen resolution changes, and much more...</TD>
+  </TR>
+  <TR valign="top" align="left">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopxliff.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop XLIFF</SPAN></TD>
+    <TD><HR>
+        <P>Use 4D as a true localization editor to manage XLIFF resources in your appication, or even externally. Easily migrate your old STR# and TEXT resources with this handy tool.</P>    </TD>
+  </TR>
+</TABLE>
+<P>* Go to the 4DPop Help to know how to create compatible components.</P>
+<HR>
+<H2>Source Code Provided</H2>
+<P>This component is provided in compiled version but you can find the source code in the <SPAN class="fileAndFolder">&quot;SOURCES&quot;</SPAN> folder that is located inside the component folder.</P>
+<HR>
+<H2>Forum</H2>
+<P>Visit the forum devoted to 4D Pop at: <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank" class="Command4D">http://forums.4d.fr/</A></P>
+</BODY>
+</HTML>

@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<LINK href="../Common/style.css" rel="stylesheet" type="text/css">
+<TITLE>4DPop Read me</TITLE>
+</HEAD>
+<BODY>
+<P>
+  <IFRAME src="../Common/Header.html" frameborder="0" scrolling="no" align="middle" height="182" width="100%" NORESIZE="true"></IFRAME>
+</P>
+<TABLE width="100%" border="0" cellpadding="4" cellspacing="0">
+  <TR>
+    <TD width="6%" valign="top"><IMG src="../Common/4DPop.png" alt="" width="64" height="64" align="absmiddle"></TD>
+    <TD width="94%" valign="middle">このコンポーネントはデザインモードにパレットをインストールします。互換のあるコンポーネントがインストールされると、このパレットにツールが追加されていきます。</TD>
+  </TR>
+</TABLE>
+<HR>
+<H2>インストール</H2>
+<TABLE width="100%" border="0" cellspacing="4" cellpadding="2">
+  <TR valign="top">
+    <TD align="right">1.</TD>
+    <TD>データベースのストラクチャファイル (".4db") と同階層に "<EM>Components</EM>" フォルダを作成します。</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">2.</TD>
+    <TD>"4DPop.4dbase" フォルダまたはこのフォルダのエイリアスを "<EM>Components</EM>"フォルダ に置きます。.</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">3.</TD>
+    <TD>データベースを開きます。</TD>
+  </TR>
+  <TR valign="top">
+    <TD align="right">4.</TD>
+    <TD>"On Statup"データベースメソッドに "Install 4DPop"   とタイプし、Tabキーを押すと、4DPopパレットをロードする以下のメソッドが挿入されます。
+      <BLOCKQUOTE>
+        <BLOCKQUOTE>
+          <BLOCKQUOTE>
+            <P class="Code4D">&nbsp;&nbsp;`Run 4DPop<BR>
+              &nbsp;&nbsp;`This code is available even if the component is not present like in the final application.<BR>
+              <B>If</B> (<B>Not</B>(<B>Is compiled mode)</B>)<BR>
+              &nbsp;&nbsp;<B>ARRAY TEXT</B>($tTxt_Components;0)<BR>
+              &nbsp;&nbsp;<B>COMPONENT LIST</B>($tTxt_Components)<BR>
+              &nbsp;&nbsp;<B>If</B> (<B>Find in array</B>($tTxt_Components;&quot;4DPop&quot;)&gt;0)<BR>
+              &nbsp;&nbsp;&nbsp;&nbsp;<B>EXECUTE METHOD</B>(&quot;4DPop_Palette&quot;)<BR>
+              &nbsp;&nbsp;<B>End if</B><BR>
+              <B>End if</B></P>
+          </BLOCKQUOTE>
+        </BLOCKQUOTE>
+    </BLOCKQUOTE></TD>
+  </TR>
+  <TR>
+    <TD align="right" valign="top">5.</TD>
+    <TD>データベースを再起動すると、デザインモードでスクリーンの左下にパレットが表示されます。</TD>
+  </TR>
+</TABLE>
+<P class="note">*Macintoshでは拡張子 "4dbase" のコンポーネントはパッケージです。</P>
+<HR>
+<H2>利用方法</H2>
+<P>ヘルプメニュー、あるいはパレットの "<EM>i</EM>" アイコンをクリックして、4DPopのヘルプを表示させることができます。</P>
+<P>パレットはデザインモードで、スクリーンの左下に表示されます。パレットが閉じられている場合、ハンドルをドラッグすると開くことができます。</P>
+<P><IMG src="Images/close.png" width="32"></P>
+<P>パレットが閉じられているときにハンドルをダブルクリックすると、パレットが開かれ、インストールされている4DPopコンポーネントに従ってサイズが調整されます。開かれたパレットのハンドルをダブルクリックすると、パレットは閉じられます。</P>
+<P>互換のあるコンポーネントがインストールされていない場合、開かれたパレットには以下の画像が表示されます:</P>
+<P><IMG src="Images/none.png" height="68" width="98"></P>
+<P>コンポーネントがインストールされていると、対応するボタンが表示されます。</P>
+<UL>
+  <LI>ボタンをクリックすると、対応するツールが起動されるか、またはツールを選択するためのメニューが表示されます。
+  <LI>Optionキー (Mac OS) またはAltキー (Windows) を押しながらクリックすると、コンポーネントのヘルプファイルが開かれます   (コンポーネントのストラクチャファイルと同階層にある"MyComponent.htm"ファイル)。 
+  </UL>
+<IMG src="Images/Palette.png" alt="" height="68" width="428" border="0">
+<P>タイトルバーをクリックしてパレットを移動し、スクリーンの左または右に配置できます。パレットの位置は記憶されます。</P>
+<P>パレットのタイトルバーにはコンテキストメニューが割り当てられています。ここからツールを選択したり、パレットに関するいくつかの機能にアクセスできます。</P>
+<P>コンポーネントはアルファベット順に並べられます。コンポーネントの並び順を指定するためには、ファイルに "01" を追加するなどします。</P>
+<HR>
+<H2>互換コンポーネント</H2>
+<P>互換* コンポーネントをデータベースの "Components"   フォルダに1つ以上配置し、データベースを再起動すると、パレット内でこれらの新しいツールがアクセスできるようになります。</P>
+<P>利用可能なコンポーネント:</P>
+<TABLE cellpadding="10">
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopbookmarks.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Bookmarks</SPAN></TD>
+    <TD><HR>
+      毎日使用するブックマークを管理: URL, ファイル, フォルダ, 電子メール... お気に入りのリストをドラッグ＆ドロップで管理できます。</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopconstanteditor.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Constants Editor</SPAN></TD>
+    <TD><HR>
+      カスタマイズされた定数を専用のエディタで作成、利用できます。作成した定数は即座に4Dメソッドで利用可能です。</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopimagebuddy.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Image buddy</SPAN></TD>
+    <TD><HR>
+        <P>アプリケーションのResourcesフォルダ内のすべての画像を管理しましょう。画像を簡単に選択、複製、変換して、プレビューしたり、フォームやアプリケーションにドロップしたり、PICTやcicnリソースをPNG画像に変換したりできます。</P>    </TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopmigration.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Migration</SPAN></TD>
+    <TD><HR>
+    <P>アプリケーションのショートカットを保持したり、古い4DK#を4D v11 SQL定数に変換したり、マクロを変換したりできます。これにより4D v11   SQlの移行がスムーズに行えます。</P></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopquiz.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Commands</SPAN></TD>
+    <TD align="left" valign="top"><HR>
+    <P>すばやく4Dコマンドのドキュメントにアクセスし、ドラッグ＆ドロップでコマンド(そして、それらのパラメタ!)をメソッドエディタに挿入します。</P></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpoprulers.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Rulers</SPAN></TD>
+    <TD><HR>
+    <P>あなたのワークスペースに縦横のルーラを配置し、必要なガイドを作成してください。環境設定を変えることなく、エンドユーザのスクリーンで視覚化できます。</P></TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopcolorchart.png" alt="" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Color Chart</SPAN></TD>
+    <TD><HR>
+      複数のカラーパレット (RGB, HSL, 等) を使用して精密に背景色と前景色を選択し、メソッドへのドラッグ＆ドロップによりソースコードを生成できます。</TD>
+  </TR>
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4DPop sqlSchema.png" alt="sqlSchemas" width="64" height="64" align="absmiddle" border="0"><SPAN class="macro">4DPop sqlSchemas</SPAN></TD>
+    <TD ><HR>
+      外部から (ODBC, SQLパススルー, 4D for Flex, 等) のSQL接続で使用するSQLスキーマをグラフィカルに定義します。スキーマはOn sql authenticateデータベースメソッドを定義する際に適用されます。</TD>
+  </TR>
+  
+  <TR align="left" valign="top">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopwindow.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop Window</SPAN></TD>
+    <TD ><HR>
+    <P>階層メニューを通して複数の開いているウィンドウをを制御できます。一度に開発モードおよびアプリケーションモードのウィンドウを表示し、ウィンドウを再構成して、依存関係   (フォーム上のメソッドオブジェクト依存関係など) を管理できます。画面解像度の変更により見失ってしまったウィンドウを再表示できます。</P></TD>
+  </TR>
+  <TR valign="top" align="left">
+    <TD nowrap><HR>
+        <IMG src="../Common/4dpopxliff.png" alt="4dpop" width="64" height="64" align="absmiddle" border="0"> <SPAN class="macro">4DPop XLIFF</SPAN></TD>
+    <TD><HR>
+        <P>4DでXLIFFリソースを編集し、アプリケーションをローカライズエディタとして使用できます。簡単にSTR#やTEXTリソースを移行できます。</P>    </TD>
+  </TR>
+</TABLE>
+<P>* 4DPop のヘルプで、互換コンポーネントの作成方法を参照することができます。</P>
+<HR>
+<H2>ソースコード</H2>
+<P>このコンポーネントはコンパイル版で提供されますが、コンポーネントフォルダ内の"Sources" フォルダにはソースコードが含まれています。</P>
+<HR>
+<H2>フォーラム</H2>
+<P>4D Pop もご参照ください: <A HREF="http://forums.4d.fr/Forum/FR/1467485/0/0" TITLE="4DPop Forum" TARGET="_blank" class="Command4D">http://forums.4d.fr/</A></P>
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+/*Ask for the name of an array, then create a loop on its size.*/For ($Lon_i;1;Size of array(<ask message="array name ?"/>);1)		<ask message="\1"/>{$Lon_i}:=<caret/>	End for

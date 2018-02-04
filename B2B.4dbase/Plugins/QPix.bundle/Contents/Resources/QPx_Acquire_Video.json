@@ -1,0 +1,16 @@
+{
+	"labels": {
+		
+        "__video_ok":       "Capture",
+        "__video_cancel":   "Done",
+        "__video_settings": "Settings…"
+        
+	},
+    
+    "options": {
+        
+        "display-capture-message":  1,
+        
+        "video-back-color":         "0xFFFFFF"
+    }
+}

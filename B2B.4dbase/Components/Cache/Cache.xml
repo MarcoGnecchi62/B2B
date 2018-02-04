@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<CacheFiles xmlns="http://namespace/reserved/2004/cache">
+
+  <File>
+    <ArchiveName>utl_if65.4darchive</ArchiveName>
+    <Name>utl_if65.4dbase</Name>
+    <Type>Folder</Type>
+    <Contents>227095338803153028322709534265042716864004352290</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>SVG Area.4darchive</ArchiveName>
+    <Name>SVG Area</Name>
+    <Type>Folder</Type>
+    <Contents>170321505702710812217032150698782039166814532494</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>nexusComponent.4darchive</ArchiveName>
+    <Name>nexusComponent.4dbase</Name>
+    <Type>Folder</Type>
+    <Contents>227095340085643369222709534265042714685960258816</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>Barcode.4darchive</ArchiveName>
+    <Name>Barcode.4dbase</Name>
+    <Type>Folder</Type>
+    <Contents>227095341376623668522709534265042709223480446435</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>7-Zip.4darchive</ArchiveName>
+    <Name>7-Zip.4dbase</Name>
+    <Type>Folder</Type>
+    <Contents>6807853670707558578681286027951280445816130230340</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>4DPop.4darchive</ArchiveName>
+    <Name>4DPop</Name>
+    <Type>Folder</Type>
+    <Contents>9651552058396919135965155206264312749841451151805</Contents>
+  </File>
+
+  <File>
+    <ArchiveName>.4darchive</ArchiveName>
+    <Name>.DS_Store</Name>
+    <Type>File</Type>
+    <Contents>5677383523800952565677383566260655528196</Contents>
+  </File>
+
+  <version>11</version>
+
+</CacheFiles>

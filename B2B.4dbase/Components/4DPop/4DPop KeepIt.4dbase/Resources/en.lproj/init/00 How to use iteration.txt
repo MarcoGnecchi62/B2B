@@ -1,0 +1,4 @@
+/*The iteration repeats a line of code and allow to use the counter as increment*/
+
+//Example: the declaration of 20 text variables: vTEXT_1 to vTEXT_20
+<iteration count="20"/>C_TEXT(vTEXT_<iteration/>)

@@ -1,0 +1,205 @@
+{
+	"mappings": {
+		"adv_prop_groups": [
+			{
+				"name":		"General",
+				"value":	1
+			},
+			{
+				"name":		"Display format",
+				"value":	2
+			},
+			{
+				"name":		"Parts",
+				"value":	4
+			},
+			{
+				"name":		"Tools",
+				"value":	5
+			},
+			{
+				"name":		"Scrollbars",
+				"value":	6
+			}
+		],
+        "tag_groups": [
+            {
+               "name":		"All",
+               "value":		"0xFFFFFFFF"
+            },
+            {
+               "name":		"-",
+               "value":		0
+            },
+            {
+               "name":		"QuickTime",
+               "value":		"0xA9000000"
+            },
+            {
+               "name":		"TIFF",
+               "value":		"0x74690000"
+            },
+            {
+               "name":		"Exif",
+               "value":		"0x65780000"
+            },
+            {
+               "name":		"GPS",
+               "value":		"0x67700000"
+            },
+            {
+               "name":		"IPTC",
+               "value":		"0x49500000"
+            }
+        ],
+        "colors": [
+            {
+               "name":		"Black and White",
+               "value":		1
+            },
+            {
+               "name":		"4 Colors",
+               "value":		2
+            },
+            {
+               "name":		"16 Colors",
+               "value":		4
+            },
+            {
+               "name":		"256 Colors",
+               "value":		8
+            },
+            {
+               "name":		"Thousands of Colors",
+               "value":		16
+            },
+            {
+               "name":		"Millions of Colors",
+               "value":		24
+            },
+            {
+               "name":		"Millions of Colors+",
+               "value":		32
+            },
+            {
+               "name":		"4 Grays",
+               "value":		34
+            },
+            {
+               "name":		"16 Grays",
+               "value":		36
+            },
+            {
+               "name":		"256 Grays",
+               "value":		40
+            }
+        ],
+        "color_spaces": [
+            {
+               "name":		"RGB",
+               "value":		"0x0001"
+            },
+            {
+               "name":		"CMYK",
+               "value":		"0x0002"
+            },
+            {
+               "name":		"Grayscale",
+               "value":		"0x000A"
+            },
+            {
+               "name":		"RGB with Alpha",
+               "value":		"0x0081"
+            },
+            {
+               "name":		"Grayscale with Alpha",
+               "value":		"0x008A"
+            }
+        ],
+        "display_formats": [
+            {
+               "name":		"Scrollable",
+               "value":		0
+            },
+            {
+               "name":		"-",
+               "value":		-1
+            },
+            {
+               "name":		"Truncated centered",
+               "value":		1
+            },
+            {
+               "name":		"Truncated non-centered",
+               "value":		4
+            },
+            {
+               "name":		"Scaled to fit",
+               "value":		2
+            },
+            {
+               "name":		"Scaled to fit proportional",
+               "value":		5
+            },
+            {
+               "name":		"Scaled to fit proportional centered",
+               "value":		6
+            }
+        ],
+        "print_formats": [
+            {
+               "name":		"Variable size",
+               "value":		0
+            },
+            {
+               "name":		"-",
+               "value":		-1
+            },
+            {
+               "name":		"Truncated centered",
+               "value":		1
+            },
+            {
+               "name":		"Truncated non-centered",
+               "value":		4
+            },
+            {
+               "name":		"Scaled to fit",
+               "value":		2
+            },
+            {
+               "name":		"Scaled to fit proportional",
+               "value":		5
+            },
+            {
+               "name":		"Scaled to fit proportional centered",
+               "value":		6
+            }
+        ]
+	},
+	
+	"lists": {
+		
+        "size_units": [
+                     "Pixels",
+                     "Percent"
+                     ],
+        "size_formats": [
+                       "#####",
+                       "###0.00"
+                       ],
+        
+        "adv_props_tab": [
+                     "Properties",
+                     "Preview"
+                     ],
+        
+        "tool_names": [
+                    "Pointer tool",
+                    "Marquee tool",
+                    "Zoom tool",
+                    "Hand tool"
+                     ]
+        
+	}
+}

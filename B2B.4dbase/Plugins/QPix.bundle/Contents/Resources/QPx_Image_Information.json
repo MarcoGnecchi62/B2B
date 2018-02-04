@@ -1,0 +1,45 @@
+{
+	"labels": {
+		
+        "__qpix_info_location_lbl":         "Location:",
+        "__qpix_info_img_type_lbl":         "Image type:",
+        "__qpix_info_img_mime_lbl":         "MIME type:",
+        "__qpix_info_img_bytes_lbl":        "Size:",
+        "__qpix_info_img_width_lbl":        "Width:",
+        "__qpix_info_img_height_lbl":       "Height:",
+        "__qpix_info_img_hres_lbl":         "Horz Res:",
+        "__qpix_info_img_vres_lbl":         "Vert Res:",
+        "__qpix_info_img_colors_lbl":       "Colors:",
+        "__qpix_info_img_cspace_lbl":       "Color space:",
+        "__qpix_info_img_cprof_lbl":        "Color profile:",
+        
+        "__qpix_info_img_num_pages_lbl":    "Number of pages:",
+        "__qpix_info_img_cur_page_lbl":     "Current page:",
+        
+        "__qpix_info_pix_bytes_lbl":        "Size:",
+        "__qpix_info_pix_width_lbl":        "Width:",
+        "__qpix_info_pix_height_lbl":       "Height:",
+        "__qpix_info_pix_hres_lbl":         "Horz Res:",
+        "__qpix_info_pix_vres_lbl":         "Vert Res:",
+        "__qpix_info_pix_colors_lbl":       "Colors:",
+        
+        "__qpix_info_ok":                   "OK"
+        
+	},
+    
+	"lists": {
+		
+        "info_tab": [
+                     "Image",
+                     "Pixel map",
+                     "Tags"
+                     ],
+        
+        "info_tab2": [
+                      "Image",
+                      "Pixel map",
+                      "Tags"
+                      ]
+        
+	}
+}

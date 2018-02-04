@@ -1,0 +1,10 @@
+*** Full Backup
+Creating archive : Mac HD:Users:if65:Desktop:B2B.4dbase:B2B[0001].4BK
+Attachment(s): 
+	Mac HD:Users:if65:Desktop:B2B.4dbase:B2B.4DSyncHeader [NOT FOUND]
+	Mac HD:Users:if65:Desktop:B2B.4dbase:B2B.4DSyncData [NOT FOUND]
+	Mac HD:Users:if65:Desktop:B2B.4dbase:B2B.4DIndx [OK]
+Scheduled 31/12/2 00:49
+Starting 27/07/2017 10:12
+Ending 27/07/2017 10:12
+
